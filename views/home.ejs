@@ -1,0 +1,44 @@
+<%- include('./base/header.ejs') %>
+
+    <body class="bg-secondary">
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="row bg-light shadow rounded overflow-hidden" style="width: 900px;">
+
+                <div class="col-md-6 p-5">
+                    <h3 class="text-center mb-4">Login</h3>
+                    <form action="/login" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Email:</label>
+                            <input type="text" class="form-control" name="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Password:</label>
+                            <input type="password" class="form-control" name="password"
+                                placeholder="Enter your password">
+                        </div>
+
+                        <div class="mb-3">
+                            <a href="#" class="text-left p-2">Forget Password!</a>
+                        </div>
+
+                        <input type="submit" value="Login" class="btn btn-primary w-100 mb-3">
+                        <p class="text-center mb-3">Don't have an account?</p>
+                        <a href="/user/signup" class="btn btn-outline-danger w-100">Sign up</a>
+                    </form>
+                </div>
+
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center bg-light">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/502/055/original/logotype-letter-login-logo-design-graphic-symbol-icon-sign-illustration-creative-idea-vector.jpg"
+                        alt="login-logo" class="img-fluid mb-3" style="max-width: 70%; border-radius: 10px;">
+                    <!-- <img src="/public/images/logo.jpg"
+                        alt="login-logo" class="img-fluid mb-3" style="max-width: 70%; border-radius: 10px;"> -->
+                    <h2 style="color: #4e73df; font-family: 'Poppins', sans-serif;">Welcome Back!</h2>
+                    <p class="text-muted">Please login to continue</p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    <%- include('./base/footer.ejs') %>
